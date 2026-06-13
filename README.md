@@ -15,5 +15,6 @@ An end-to-end automated generation workflow bridging underlying physical logic w
 
 ### 🎥 Live Demonstration
 *Generating a complex multi-body lattice structure in seconds:*
+*(Click the image to play the 17s demonstration)*
 
 <img width="2658" height="776" alt="AI_Agent_Lattice_60x_Demo" src="https://github.com/user-attachments/assets/112f05b2-c23f-43f9-957b-80a73b10d09d" />
