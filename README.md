@@ -1,20 +1,35 @@
-# AI-Native Lattice Diagram Generator ⚛️
+# AI-Native Lattice Diagram Generator
 
-> **Note:** Core workflow scripts and physics-based validation rules are currently in private beta / pending academic publication. This repository serves as a technical architecture showcase.
-> *(注：核心工作流代码与基于物理规则的校验算法目前处于内部测试/等待学术发表阶段。本仓库仅作为技术架构展示。)*
+This repository is the public showcase for my resume project:
+**AI-Native Lattice Diagram Generation MVP**.
 
-### 🎯 The Pain Point
-Traditional rendering of complex multi-body physics lattice diagrams requires hours of manual coding, parameter tuning, and low-efficiency compilation. 
+The project explores an automated workflow for producing physics-inspired
+lattice diagrams by connecting lattice geometry logic, constraint-aware
+parameter generation, and SDXL-based image generation.
 
-### 🚀 The Solution (MVP Architecture)
-An end-to-end automated generation workflow bridging underlying physical logic with Text-to-Image Generative AI (SDXL):
-- **Frontend:** Interactive Web UI for instant parameter configuration.
-- **Physics-Informed Backend:** Python engine designed to strictly constrain lattice geometric structures and generate physics-consistent input parameters prior to model invocation.
-- **AI Rendering Engine:** Automated SDXL API scheduling via ComfyUI workflows, compressing rendering time to minutes.
-- **Validation:** Implemented a **Physics-Based Validation** layer to eliminate spatial hallucinations and ensure the strict physical accuracy of the generated lattice nodes.
+## Problem
 
-### 🎥 Live Demonstration
-*Generating a complex multi-body lattice structure in seconds:*
-*(Click the image to play the 17s demonstration)*
+Traditional many-body physics lattice diagrams often require manual coding,
+repeated parameter tuning, and slow visual iteration. The workflow can be
+time-consuming, visually rigid, and difficult to reuse across lattice types.
+
+## MVP Architecture
+
+- **Interactive Web UI:** Configures lattice type, visual style, and generation parameters.
+- **Python backend:** Generates lattice geometry parameters and physics-constrained inputs.
+- **SDXL generation layer:** Calls an SDXL image-generation API for diagram rendering.
+- **Physics-Based Validation:** Checks generated lattice nodes, connection relations, and geometric symmetry against predefined physical constraints.
+
+## Resume-Aligned Highlights
+
+- Built the MVP independently from 0 to 1.
+- Connected the underlying physics logic, image-condition control, and multimodal generation model into one workflow.
+- Tested the workflow on 4 representative lattice categories.
+- Reduced the production time of a single diagram from about 3 hours to about 3 minutes.
+- Reduced manual parameter-tuning iterations from about 30 rounds to about 3 rounds.
+
+## Demo
+
+The image below shows the public demo material for the workflow.
 
 <img width="2658" height="776" alt="AI_Agent_Lattice_60x_Demo" src="https://github.com/user-attachments/assets/112f05b2-c23f-43f9-957b-80a73b10d09d" />
